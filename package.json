@@ -3,13 +3,28 @@
     "name": "Cavrnus Inc.",
     "url": "https://www.cavrnus.com"
   },
-  "name": "com.cavrnus.NAME",
-  "displayName": "ADD NAME HERE",
+  "name": "com.cavrnus.readyplayerme",
+  "displayName": "Cavrnus Ready Player Me",
   "documentationUrl": "https://cavrnus.atlassian.net/wiki/spaces/CSM/pages/815136772/Cavrnus+Knowledge+Base",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "unity": "2022.3",
-  "description": "ADD DESCRIPTION",
+  "description": "This package integrates the ReadyPlayerMe avatar system with Cavrnus Spatial Connector.",
   "publishConfig": {
     "registry": "https://packages.cavrn.us/"
-  }
+  },
+  "dependencies": {
+    "com.cavrnus.csc": "2.6.0",
+    "com.readyplayerme.core": "https://github.com/readyplayerme/rpm-unity-sdk-core.git"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Cavrnus-Inc/com-cavrnus-readyplayerme.git"
+  },
+  "samples": [
+    {
+      "displayName": "SimpleDemo",
+      "description": "Includes simple rpm sync script and demo scene to showcase swapping avatars at runtime.",
+      "path": "Samples~/SimpleDemo"
+    }
+  ]
 }

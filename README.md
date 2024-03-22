@@ -1,13 +1,6 @@
-# <p style="text-align: center;">Name of package</p>
+# <p style="text-align: center;">Cavrnus Ready Player Me</p>
 
-Add quick description here...
-
-## Usage
-
-What does this package do?
-
-## Features
-* Feature
+This package integrates the ReadyPlayerMe avatar system with Cavrnus Spatial Connector.
 
 ## Documentation
 Robust documenation can be found <a><a href="https://cavrnus.atlassian.net/wiki/spaces/CSM/pages/815136772/Cavrnus+Knowledge+Base">here</a>.
