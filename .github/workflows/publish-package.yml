@@ -1,14 +1,22 @@
-name: Publish Package to Verdaccio on Commit
+name: Publish Package to Verdaccio [https://packages.cavrn.us/] on Commit
 
 on:
   push:
     branches:
-      - main
+      - release
+    tags:
+      - '*' # Trigger on all tags
+  workflow_dispatch:
 
 jobs:
   publish:
+    name: Publish to Verdaccio
+    if: github.ref_type == 'tag'
     runs-on: ubuntu-latest
     steps:
+      - name: Delete .github folder
+        run: rm -rf .github
+    
       - name: Checkout code
         uses: actions/checkout@v2
 
